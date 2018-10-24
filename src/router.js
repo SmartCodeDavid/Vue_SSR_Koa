@@ -19,11 +19,19 @@ import VueRouter from 'vue-router';
 import pageA from './pages/a.vue';
 import pageB from './pages/b.vue';
 import PageDefault from './pages/default.vue';
+import VuexDemo from './components/VuexDemo.vue';
+import App from '../src/App.vue';
+
 
 
 Vue.use(VueRouter);
 
 const routes = [
+    {
+        path: '/home',
+        component: App
+
+    },
     {
         path: '/',
         component: PageDefault
@@ -35,7 +43,12 @@ const routes = [
     {
         path: '/pageb',
         component: pageB
-    }
+    },
+    {
+        path: '/vuexdemo',
+        component: VuexDemo
+    },
+
 ];
 
 const router = new VueRouter({

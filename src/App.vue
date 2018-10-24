@@ -9,11 +9,15 @@
      <!-- <event></event> -->
      <!-- <component-demo :age="age" @patch="patch"></component-demo> -->
 
-     <slot-demo>
+     <!-- <slot-demo>
        <h1>我要加东西</h1>
        <h1 slot="top">我要加东西1</h1>
        <h1 slot="bottom">我要加东西2</h1>
-     </slot-demo>
+     </slot-demo> -->
+
+    <vuex-page-a></vuex-page-a>
+    <vuex-page-b></vuex-page-b>
+
   </div>
 </template>
 
@@ -28,6 +32,9 @@ import SlotDemo from './components/SlotDemo.vue'
 
 import './components/n.js'
 
+import VuexPageA from './components/a.vue';  //vuex -- a
+import VuexPageB from './components/b.vue'; //vuex -- b
+
 export default {
   name: 'app',
   components: {
@@ -38,6 +45,8 @@ export default {
     Event,
     ComponentDemo,
     SlotDemo,
+    VuexPageA,
+    VuexPageB
   },
   data() {
     return {
