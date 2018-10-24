@@ -8,7 +8,7 @@
      <!-- <Style></Style>  -->
      <!-- <event></event> -->
      <!-- <component-demo :age="age" @patch="patch"></component-demo> -->
-     
+
      <slot-demo>
        <h1>我要加东西</h1>
        <h1 slot="top">我要加东西1</h1>
@@ -25,7 +25,6 @@ import Style from './components/Style.vue'
 import Event from './components/Event.vue'
 import ComponentDemo from './components/ComponentDemo.vue'
 import SlotDemo from './components/SlotDemo.vue'
-
 
 import './components/n.js'
 
